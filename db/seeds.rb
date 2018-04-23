@@ -8,27 +8,27 @@ Artist.delete_all
 
 artist1 = Artist.new({
   "name" => "Artist 1",
-  "artist_picture" => "https://www.pexels.com/photo/black-record-vinyl-167092/"
+  "artist_picture" => "./images/bass-guitar-chord-close-up-96380.jpg"
 })
 
 artist2 = Artist.new({
   "name" => "Artist 2",
-  "artist_picture" => "https://www.pexels.com/photo/top-view-photography-of-vinyl-album-case-near-white-tealight-candle-placed-on-brown-table-706142/"
+  "artist_picture" => "./images/bass-guitar-chord-close-up-96380.jpg"
 })
 
 artist3 = Artist.new({
   "name" => "Artist 3",
-  "artist_picture" => "https://www.pexels.com/photo/grayscale-photo-of-cutaway-acoustic-guitar-1010518/"
+  "artist_picture" => "./images/bass-guitar-chord-close-up-96380.jpg"
 })
 
 artist4 = Artist.new({
   "name" => "Artist 4",
-  "artist_picture" => "https://www.pexels.com/photo/man-person-wall-music-387/"
+  "artist_picture" => "./images/bass-guitar-chord-close-up-96380.jpg"
 })
 
 artist5 = Artist.new({
   "name" => "Artist 5",
-  "artist_picture" => "https://www.pexels.com/photo/woman-with-headphones-listening-music-6399/"
+  "artist_picture" => "./images/bass-guitar-chord-close-up-96380.jpg"
 })
 
 artist1.save
@@ -43,7 +43,7 @@ album1 = Album.new({
   "artist_id" => artist1.id,
   "genre" => "Rock",
   "stock_leve" => 0,
-  "album_picture" => "https://www.pexels.com/photo/person-s-hand-holding-brown-violent-963113/"
+  "album_picture" => "./images/album-black-classic-167092.jpg"
 })
 
 album2 = Album.new({
@@ -51,7 +51,7 @@ album2 = Album.new({
   "artist_id" => artist2.id,
   "genre" => "Pop",
   "stock_leve" => 0,
-  "album_picture" => "https://www.pexels.com/photo/acoustic-amplifier-artist-audio-114820/"
+  "album_picture" => "./images/album-black-classic-167092.jpg"
 })
 
 album3 = Album.new({
@@ -59,7 +59,7 @@ album3 = Album.new({
   "artist_id" => artist3.id,
   "genre" => "Indy",
   "stock_leve" => 0,
-  "album_picture" => "https://www.pexels.com/photo/group-of-people-gathering-near-bonfire-954616/"
+  "album_picture" => "./images/album-black-classic-167092.jpg"
 })
 
 album4 = Album.new({
@@ -67,7 +67,7 @@ album4 = Album.new({
   "artist_id" => artist4.id,
   "genre" => "Pop",
   "stock_leve" => 0,
-  "album_picture" => "https://www.pexels.com/photo/abstract-art-blur-bright-417458/"
+  "album_picture" => "./images/album-black-classic-167092.jpg"
 })
 
 album5 = Album.new({
@@ -75,7 +75,7 @@ album5 = Album.new({
   "artist_id" => artist5.id,
   "genre" => "Metal",
   "stock_leve" => 0,
-  "album_picture" => "https://www.pexels.com/photo/audio-e-guitars-guitars-music-6966/"
+  "album_picture" => "./images/album-black-classic-167092.jpg"
 })
 
 album6 = Album.new({
@@ -83,7 +83,7 @@ album6 = Album.new({
   "artist_id" => artist1.id,
   "genre" => "Country",
   "stock_leve" => 0,
-  "album_picture" => "https://www.pexels.com/photo/woman-in-white-cap-sleeved-shirt-blowing-dust-632722/"
+  "album_picture" => "./images/album-black-classic-167092.jpg"
 })
 
 album7 = Album.new({
@@ -91,7 +91,7 @@ album7 = Album.new({
   "artist_id" => artist5.id,
   "genre" => "Indy",
   "stock_leve" => 0,
-  "album_picture" => "https://www.pexels.com/photo/action-adult-dance-dancer-270837/"
+  "album_picture" => "./images/album-black-classic-167092.jpg"
 })
 
 album1.save

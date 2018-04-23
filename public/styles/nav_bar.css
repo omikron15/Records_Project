@@ -1,0 +1,21 @@
+.nav_bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+  background-color: purple;
+
+}
+
+.nav_bar a{
+  color: black;
+}
+
+.nav_bar a:hover{
+  background-color: white;
+
+}
+
+.nav_bar li {
+  display: inline-block;
+}

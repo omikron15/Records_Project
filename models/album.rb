@@ -60,11 +60,22 @@ class Album
       sql = "SELECT * FROM artists WHERE id = $1"
       values = [@artist_id]
       result = SqlRunner.run(sql, values)
-      return Artist.new(result)
+      return Artist.new(result.first)
   end
 
   def self.map_albums(album_data)
     return album_data.map {|album_hash| Album.new(album_hash)}
+  end
+
+  def stock_category()
+    if @stock_level == 0
+      return "Out of Stock"
+    elsif @stock_level <= 10
+      return "Low Stock Level"
+    elsif @stock_level <= 20
+      return "Medium Stock Level"
+    else return "High Stock Level"
+    end
   end
 
 end

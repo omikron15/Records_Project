@@ -50,7 +50,7 @@ class Artist
       sql = "SELECT * FROM artists WHERE id = $1"
       values = [id]
       result = SqlRunner.run(sql, values)
-      return Artist.new(result)
+      return Artist.new(result.first)
   end
 
   def albums()

@@ -15,3 +15,11 @@ post '/album' do
   album.save
   redirect to("/")
 end
+
+get '/albums/stock' do
+  @no_stock = Album.get_stock_group("Out of Stock")
+  @low_stock = Album.get_stock_group("Low Stock Level")
+  @medium_stock = Album.get_stock_group("Medium Stock Level")
+  @high_stock = Album.get_stock_group("High Stock Level")
+  erb(:"albums/stock")
+end

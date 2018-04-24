@@ -4,6 +4,7 @@
   border: 3px solid #240090;
   width: 100%;
   overflow-x: scroll;
+  border-radius: 10px;
 }
 
 .Each_Artist_Div{
@@ -19,6 +20,7 @@
   margin: 3px;
   background-color: #A0A0A0;
   color: white;
+  border-radius: 10px;
 }
 
 .All_Albums_Div{
@@ -27,6 +29,7 @@
   border: 3px solid #240090;
   width: 100%;
   overflow-x: scroll;
+  border-radius: 10px;
 }
 
 .Each_Album_Div{
@@ -40,4 +43,15 @@
   margin: 3px;
   background-color: #A0A0A0;
   color: white;
+  border-radius: 10px;
+}
+
+p {
+  text-align: center;
+}
+
+img{
+display: block;
+margin-left: auto;
+margin-right: auto;
 }

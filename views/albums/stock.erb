@@ -1,0 +1,65 @@
+<h1>Stock Summary Page</h1>
+
+<p>Out of Stock!</p>
+<% if @no_stock.count > 0 %>
+<div class="Stock_Cont_Div" >
+  <% for each_album in @no_stock %>
+  <div class="Stock_Div">
+    <p><%= each_album.name %> </p>
+    <p><%= each_album.artist.name %> </p>
+    <p><%= each_album.genre %> </p>
+    <p><%= each_album.stock_level %> : <%= each_album.stock_category() %> </p>
+  </div>
+  <% end %>
+</div>
+<% else %>
+<p> There are currently no items out of stock :) <p>
+<% end %>
+
+<p>Low Stock!</p>
+<% if @low_stock.count > 0 %>
+<div class="Stock_Cont_Div" >
+  <% for each_album in @low_stock %>
+  <div class="Stock_Div">
+    <p><%= each_album.name %> </p>
+    <p><%= each_album.artist.name %> </p>
+    <p><%= each_album.genre %> </p>
+    <p><%= each_album.stock_level %> : <%= each_album.stock_category() %> </p>
+  </div>
+  <% end %>
+</div>
+<% else %>
+<p> There are currently no items in the low stock category :) <p>
+<% end %>
+
+<p>Medium Stock!</p>
+<% if @medium_stock.count > 0 %>
+<div class="Stock_Cont_Div" >
+  <% for each_album in @medium_stock %>
+  <div class="Stock_Div">
+    <p><%= each_album.name %> </p>
+    <p><%= each_album.artist.name %> </p>
+    <p><%= each_album.genre %> </p>
+    <p><%= each_album.stock_level %> : <%= each_album.stock_category() %> </p>
+  </div>
+  <% end %>
+</div>
+<% else %>
+<p> There are currently no items in the medium stock category :) <p>
+<% end %>
+
+<p>High Stock!</p>
+<% if @high_stock.count > 0 %>
+<div class="Stock_Cont_Div" >
+  <% for each_album in @high_stock %>
+  <div class="Stock_Div">
+    <p><%= each_album.name %> </p>
+    <p><%= each_album.artist.name %> </p>
+    <p><%= each_album.genre %> </p>
+    <p><%= each_album.stock_level %> : <%= each_album.stock_category() %> </p>
+  </div>
+  <% end %>
+</div>
+<% else %>
+<p> There are currently no items in the high stock category :) <p>
+<% end %>

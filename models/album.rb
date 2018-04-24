@@ -78,4 +78,16 @@ class Album
     end
   end
 
+  def self.get_stock_group(category)
+    results = []
+    albums = self.all()
+    for album in albums
+      if album.stock_category == category
+        results.push(album)
+      end
+    end
+    return results
+  end
+
+
 end

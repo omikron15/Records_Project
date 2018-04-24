@@ -1,9 +1,9 @@
-<p>The Record Store App :)</p>
-
+<div class="Title">
 <P>Artists</p>
   <form action="/artists/new" method="get">
       <input type="submit" value="Add a New Artist" />
   </form>
+</div>
 
 <div class="All_Artists_Div">
   <% for each_artist in @artists %>
@@ -15,10 +15,12 @@
   <% end %>
 </div>
 
+<div class="Title">
 <P>Albums</p>
   <form action="/albums/new" method="get">
       <input type="submit" value="Add a New Album" />
   </form>
+</div>
 
 <div class="All_Albums_Div" >
   <% for each_album in @albums %>

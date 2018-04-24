@@ -6,13 +6,14 @@
   <% for each_artist in @artists %>
   <div class="Each_Artist_Div">
     <p><%= each_artist.name %> </p>
-    <img src=<%= each_artist.artist_picture %> height="100" width="100">
+    <img src=<%= each_artist.artist_picture %> height="150" width="150">
 
   </div>
   <% end %>
 </div>
 
 <P>Albums</p>
+
 <div class="All_Albums_Div" >
   <% for each_album in @albums %>
   <div class="Each_Album_Div">
@@ -20,7 +21,7 @@
     <p><%= each_album.artist.name %> </p>
     <p><%= each_album.genre %> </p>
     <p><%= each_album.stock_level %> : <%= each_album.stock_category() %> </p>
-    <img src=<%= each_album.album_picture %> height="100" width="100">
+    <img src=<%= each_album.album_picture %> height="150" width="150">
   </div>
   <% end %>
 </div>

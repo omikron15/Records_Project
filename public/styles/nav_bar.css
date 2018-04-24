@@ -3,16 +3,18 @@
   flex-wrap: wrap;
   justify-content: space-around;
   flex-direction: row;
-  background-color: purple;
+  background-color: #282828;
+  border-radius: 25px;
+
 
 }
 
 .nav_bar a{
-  color: black;
+  color: white;
 }
 
 .nav_bar a:hover{
-  background-color: white;
+  background-color: #3500D3;
 
 }
 

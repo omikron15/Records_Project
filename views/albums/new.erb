@@ -1,26 +1,44 @@
-<h1>New Artist Page</h1>
+<h1>Manage Albums Page</h1>
+
+
+
+  <div class="container">
 
 <form action="/album" method="post">
 
-    <label for="name">Album Name:</label>
-    <input type="text" id="name" name="name">
+    <div class="row">
+    <div class="cell"> <label for="name">Album Name:</label> </div>
+    <div class="cell"> <input type="text" id="name" name="name"> </div>
+    </div>
 
-    <label for="artist_id">Artist:</label>
-    <select name="artist_id" id="artist_id">
+    <div class="row">
+    <div class="cell"> <label for="artist_id">Artist:</label> </div>
+    <div class="cell"> <select name="artist_id" id="artist_id">
       <% @artists.each do |artist| %>
       <option value = <%= artist.id %> ><%=artist.name%></option>
       <% end %>
-    </select>
+    </select> </div>
+    </div>
 
-    <label for="genre">Genre:</label>
-    <input type="text" id="genre" name="genre">
+    <div class="row">
+    <div class="cell"> <label for="genre">Genre:</label> </div>
+    <div class="cell"> <input type="text" id="genre" name="genre"> </div>
+    </div>
 
-    <label for="stock_level">Stock Level:</label>
-    <input type="text" id="stock_level" name="stock_level">
+    <div class="row">
+    <div class="cell"> <label for="stock_level">Stock Level:</label> </div>
+    <div class="cell"> <input type="text" id="stock_level" name="stock_level"> </div>
+    </div>
 
-    <label for="album_picture">Album Picture Link:</label>
-    <input type="text" id="album_picture" name="album_picture">
+    <div class="row">
+    <div class="cell"> <label for="album_picture">Album Picture Link:</label> </div>
+    <div class="cell"> <input type="text" id="album_picture" name="album_picture"> </div>
+    </div>
 
-    <input type="submit" value="Add Album">
+    <div class="row">
+    <div class="cell"> <input type="submit" value="Add Album"></div>
+    </div>
 
 </form>
+
+  </div>

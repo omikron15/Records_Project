@@ -1,13 +1,17 @@
-<h1>New Artist Page</h1>
+<h1>Manage Artists Page</h1>
 
-<form action="/artist" method="post">
-
-    <label for="name">Artist Name:</label>
-    <input type="text" id="name" name="name">
-
-    <label for="artist_picture">Artist Picture Link:</label>
-    <input type="text" id="artist_picture" name="artist_picture">
-
-    <input type="submit" value="Add Artist">
-
-</form>
+<div class="container">
+  <form action="/artist" method="post">
+  <div class="row">
+      <div class="cell">  <label for="name">Artist Name:</label> </div>
+      <div class="cell">  <input type="text" id="name" name="name"> </div>
+  </div>
+  <div class="row">
+      <div class="cell"> <label for="artist_picture">Artist Picture Link:</label> </div>
+      <div class="cell"> <input type="text" id="artist_picture" name="artist_picture"> </div>
+  </div>
+  <div class="bottom-row">
+    <div class="cell"> <input type="submit" value="Add Artist"> </div>
+  </div>
+  </form>
+</div>

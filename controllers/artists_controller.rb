@@ -5,8 +5,8 @@ require_relative( '../models/artist.rb' )
 require_relative( '../models/album.rb' )
 
 get '/artists/new' do
-  #@artists = Artist.all
-  #@albums = Album.all
+  @artists = Artist.all
+  @albums = Album.all
   erb(:"artists/new")
 end
 
@@ -16,9 +16,8 @@ post '/artist' do
   redirect to("/")
 end
 
-# maybe do delete if you have time
-
-# post '/bitings/:id/delete' do
-#   Biting.destroy(params[:id])
-#   redirect to("/bitings")
-# end
+post "/artist/delete" do
+  artist = Artist.find_by_id(params[:artist_id])
+  artist.destroy()
+  redirect to "/artists/new"
+end

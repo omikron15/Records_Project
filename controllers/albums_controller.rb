@@ -23,3 +23,9 @@ get '/albums/stock' do
   @high_stock = Album.get_stock_group("High Stock Level")
   erb(:"albums/stock")
 end
+
+post "/album/delete" do
+  album = Album.find_by_id(params[:album_id])
+  album.destroy()
+  redirect to "/albums/new"
+end

@@ -42,7 +42,7 @@ album1 = Album.new({
   "name" => "Album 1",
   "artist_id" => artist1.id,
   "genre" => "Rock",
-  "stock_leve" => 11,
+  "stock_level" => 11,
   "album_picture" => "./images/album-black-classic-167092.jpg"
 })
 
@@ -50,7 +50,7 @@ album2 = Album.new({
   "name" => "Album 2",
   "artist_id" => artist2.id,
   "genre" => "Pop",
-  "stock_leve" => 9,
+  "stock_level" => 9,
   "album_picture" => "./images/audience-band-concert-167491.jpg"
 })
 
@@ -58,7 +58,7 @@ album3 = Album.new({
   "name" => "Album 3",
   "artist_id" => artist3.id,
   "genre" => "Indy",
-  "stock_leve" => 3,
+  "stock_level" => 3,
   "album_picture" => "./images/audience-band-concert-167636.jpg"
 })
 
@@ -66,7 +66,7 @@ album4 = Album.new({
   "name" => "Album 4",
   "artist_id" => artist4.id,
   "genre" => "Pop",
-  "stock_leve" => 30,
+  "stock_level" => 30,
   "album_picture" => "./images/bass-guitar-chord-close-up-96380.jpg"
 })
 
@@ -74,7 +74,7 @@ album5 = Album.new({
   "name" => "Album 5",
   "artist_id" => artist5.id,
   "genre" => "Metal",
-  "stock_leve" => 1,
+  "stock_level" => 1,
   "album_picture" => "./images/close-up-fashion-female-373945.jpg"
 })
 
@@ -82,7 +82,7 @@ album6 = Album.new({
   "name" => "Album 6",
   "artist_id" => artist1.id,
   "genre" => "Country",
-  "stock_leve" => 5,
+  "stock_level" => 5,
   "album_picture" => "./images/concert-music-musical-instrument-111287.jpg"
 })
 
@@ -90,7 +90,7 @@ album7 = Album.new({
   "name" => "Album 7",
   "artist_id" => artist5.id,
   "genre" => "Indy",
-  "stock_leve" => 20,
+  "stock_level" => 20,
   "album_picture" => "./images/earphones-earpods-justifyyourlove-802958.jpg"
 })
 

@@ -1,5 +1,6 @@
 <h1>Manage Albums Page</h1>
 
+<div class="bigger_container">
   <div class="container">
 <form action="/album" method="post">
 
@@ -32,7 +33,7 @@
     <div class="cell"> <input type="text" id="album_picture" name="album_picture"> </div>
     </div>
 
-    <div class="row">
+    <div class="bottom-row">
     <div class="cell"> <input type="submit" value="Add Album"></div>
     </div>
 </form>
@@ -40,14 +41,18 @@
 
 <div class="container">
   <form action="/album/delete" method="post">
-
-    <select name="album_id" id="album_id">
+    <p> Select an album to delete. </p>
+    <div class="delete-options-row">
+    <select name="album_id" id="album_id" class="delete_options">
       <% @albums.each do |album| %>
       <option value = <%= album.id %> ><%=album.name%></option>
       <% end %>
     </select>
+  </div>
 
-
+      <div class="bottom-row">
       <div class="cell"> <input type="submit" value="Delete Album"></div>
+      </div>
   </form>
+</div>
 </div>

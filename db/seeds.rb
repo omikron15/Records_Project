@@ -7,28 +7,28 @@ Album.delete_all
 Artist.delete_all
 
 artist1 = Artist.new({
-  "name" => "Artist 1",
-  "artist_picture" => "./images/bass-guitar-chord-close-up-96380.jpg"
+  "name" => "The White Stripes",
+  "artist_picture" => "https://cdn-images-1.medium.com/max/1548/1*9ZdC9Lj2VJINTb-CSvB8pA.jpeg"
 })
 
 artist2 = Artist.new({
-  "name" => "Artist 2",
-  "artist_picture" => "./images/abstract-art-blur-417458.jpg"
+  "name" => "System of a Down",
+  "artist_picture" => "http://assets.blabbermouth.net/media/systemofadown2014band_638.jpg"
 })
 
 artist3 = Artist.new({
-  "name" => "Artist 3",
-  "artist_picture" => "./images/acoustic-antique-art-290660.jpg"
+  "name" => "Rise Against",
+  "artist_picture" => "https://yt3.ggpht.com/a-/AJLlDp3fODNC9aadxAKtSIaSXXSUQwf3mSDy2EtMYQ=s900-mo-c-c0xffffffff-rj-k-no"
 })
 
 artist4 = Artist.new({
-  "name" => "Artist 4",
-  "artist_picture" => "./images/adult-beautiful-blur-374703.jpg"
+  "name" => "Korn",
+  "artist_picture" => "https://pbs.twimg.com/profile_images/739879064928849921/78JQrIAo_400x400.jpg"
 })
 
 artist5 = Artist.new({
-  "name" => "Artist 5",
-  "artist_picture" => "./images/audience-backlit-band-154147.jpg"
+  "name" => "Rag'n'Bone Man",
+  "artist_picture" => "https://www.ragnbonemanmusic.com/wp-content/themes/ragnboneman/assets/img/ragsold.jpg"
 })
 
 artist1.save
@@ -39,59 +39,59 @@ artist5.save
 #Start of Album creation
 
 album1 = Album.new({
-  "name" => "Album 1",
+  "name" => "Elephant",
   "artist_id" => artist1.id,
   "genre" => "Rock",
   "stock_level" => 11,
-  "album_picture" => "./images/album-black-classic-167092.jpg"
+  "album_picture" => "http://www.clashmusic.com/sites/default/files/styles/article_feature/public/field/image/R-567336-1249586205.jpeg.jpg?itok=rOlxhzp4"
 })
 
 album2 = Album.new({
-  "name" => "Album 2",
-  "artist_id" => artist2.id,
-  "genre" => "Pop",
+  "name" => "Icky Thump",
+  "artist_id" => artist1.id,
+  "genre" => "Rock",
   "stock_level" => 9,
-  "album_picture" => "./images/audience-band-concert-167491.jpg"
+  "album_picture" => "https://images-na.ssl-images-amazon.com/images/I/8132V-jUtgL._SL1425_.jpg"
 })
 
 album3 = Album.new({
-  "name" => "Album 3",
-  "artist_id" => artist3.id,
-  "genre" => "Indy",
+  "name" => "Toxicity",
+  "artist_id" => artist2.id,
+  "genre" => "Alternative metal",
   "stock_level" => 3,
-  "album_picture" => "./images/audience-band-concert-167636.jpg"
+  "album_picture" => "https://www.debaser.it/files/2005%2F6617.jpg"
 })
 
 album4 = Album.new({
-  "name" => "Album 4",
-  "artist_id" => artist4.id,
-  "genre" => "Pop",
+  "name" => "Steal This Album!",
+  "artist_id" => artist2.id,
+  "genre" => "Alternative metal",
   "stock_level" => 30,
-  "album_picture" => "./images/bass-guitar-chord-close-up-96380.jpg"
+  "album_picture" => "https://upload.wikimedia.org/wikipedia/en/thumb/4/45/StealThisAlbum.png/220px-StealThisAlbum.png"
 })
 
 album5 = Album.new({
-  "name" => "Album 5",
-  "artist_id" => artist5.id,
-  "genre" => "Metal",
+  "name" => "Appeal to Reason",
+  "artist_id" => artist3.id,
+  "genre" => "Rock",
   "stock_level" => 1,
-  "album_picture" => "./images/close-up-fashion-female-373945.jpg"
+  "album_picture" => "https://upload.wikimedia.org/wikipedia/en/thumb/d/df/ATRFinal.jpg/220px-ATRFinal.jpg"
 })
 
 album6 = Album.new({
-  "name" => "Album 6",
-  "artist_id" => artist1.id,
-  "genre" => "Country",
+  "name" => "Follow the Leader",
+  "artist_id" => artist4.id,
+  "genre" => "nu metal",
   "stock_level" => 5,
-  "album_picture" => "./images/concert-music-musical-instrument-111287.jpg"
+  "album_picture" => "https://www.musiconvinyl.com/fotos/1573_foto1_product_groot.jpg"
 })
 
 album7 = Album.new({
-  "name" => "Album 7",
+  "name" => "Human",
   "artist_id" => artist5.id,
-  "genre" => "Indy",
+  "genre" => "Soul",
   "stock_level" => 20,
-  "album_picture" => "./images/earphones-earpods-justifyyourlove-802958.jpg"
+  "album_picture" => "http://i1.sndcdn.com/artworks-000203109801-33avyd-t500x500.jpg"
 })
 
 album1.save

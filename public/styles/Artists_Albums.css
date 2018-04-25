@@ -21,6 +21,7 @@
   background-color: #A0A0A0;
   color: white;
   border-radius: 10px;
+  margin-right: 5px
 }
 
 .All_Albums_Div{
@@ -43,7 +44,8 @@
   margin: 3px;
   background-color: #A0A0A0;
   color: white;
-  border-radius: 10px;
+  border-radius: 10px
+
 }
 
 p {

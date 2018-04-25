@@ -1,7 +1,7 @@
 .All_Artists_Div{
   display: flex;
   flex-direction: row;
-  border: 3px solid #240090;
+  border: 3px solid black;
   width: 100%;
   overflow-x: scroll;
   border-radius: 10px;
@@ -15,7 +15,7 @@
   min-height: 200px;
   height: 200px;
   width: 200px;
-  border: 3px solid #240090;
+  border: 3px solid black;
   padding: 3px;
   margin: 3px;
   background-color: #A0A0A0;
@@ -26,7 +26,7 @@
 .All_Albums_Div{
   display: flex;
   flex-direction: row;
-  border: 3px solid #240090;
+  border: 3px solid black;
   width: 100%;
   overflow-x: scroll;
   border-radius: 10px;
@@ -38,7 +38,7 @@
   height: 300px;
   min-width: 200px;
   max-width: 200px;
-  border: 3px solid #240090;
+  border: 3px solid black;
   padding: 3px;
   margin: 3px;
   background-color: #A0A0A0;

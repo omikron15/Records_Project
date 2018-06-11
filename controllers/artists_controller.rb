@@ -1,5 +1,5 @@
 require( 'sinatra' )
-require( 'sinatra/contrib/all' )
+# require( 'sinatra/contrib/all' ) if development? //Removed for heroku
 require_relative( '../models/artist.rb' )
 require_relative( '../models/album.rb' )
 
